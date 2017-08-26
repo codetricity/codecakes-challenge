@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                   <h2>Challenge</h2>
+                   <p>
+                        Print number of milliseconds elapsed since 
+                        game started
+                   </p>
+                   <img src="img/milli.png">
+                   <ul>
+                       <li>Use <code>pygame.time.get_ticks()</code></li>
+                       <li>use Python 
+                           <code>print</code> statement in while loop</li>
+                   </ul>
+                </section>
+				<section>
+                    <h2> Answer on next slide</h2>
+                </section>
+<section>
+<pre>
+import pygame
+pygame.init()
+
+while True:
+    print(pygame.time.get_ticks())
+</pre>
+</section>
+
+<section>
+    <h2>Challenge</h2>
+<p>Convert from millisecond to seconds</p>
+<img src="img/seconds_float.png">
+</section>
+<section>
+        <h2> Answer on next slide</h2>
+    </section>
+
+<section>
+<pre>
+import pygame
+pygame.init()
+
+while True:
+    print(pygame.time.get_ticks()/1000.0)
+</pre>
+</section>
+
+
+			</div>
+		</div>
+		<script src="js/reveal.js"></script>
+		<script>
+			Reveal.initialize();
+		</script>
+	</body>
+</html>
